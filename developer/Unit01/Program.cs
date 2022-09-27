@@ -140,6 +140,7 @@ namespace Unit01
         static void GreetingDisplay()
         {
             Console.WriteLine("Welcome to the Tic Tac Toe Program!");
+            Console.WriteLine(" ");
         }
     }
 }
