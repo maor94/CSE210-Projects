@@ -16,70 +16,89 @@ namespace Unit01
 
             string currentPlayer = "X";
 
-            int squareChoice = GetUserChoice(currentPlayer);
-            MakeMove(board, currentPlayer, squareChoice);
-            BoardDisplay(board);
-            Console.WriteLine(" "); //Empty Line
+            while (IsWinner(board) == false)
+            {
+                int squareChoice = GetUserChoice(currentPlayer);
+                MakeMove(board, currentPlayer, squareChoice);
+                BoardDisplay(board);
+                Console.WriteLine(" "); //Empty Line
+                if  (currentPlayer == "X")
+                {
+                    currentPlayer = "O";
+                }
+                else if  (currentPlayer == "O")
+                {
+                    currentPlayer = "X";
+                }
+            }
+
             
-            currentPlayer = "O";
-
-            squareChoice = GetUserChoice(currentPlayer);
-            MakeMove(board, currentPlayer, squareChoice);
-            BoardDisplay(board);
-            Console.WriteLine(" "); //Empty Line
-
-            currentPlayer = "X";
-
-            squareChoice = GetUserChoice(currentPlayer);
-            MakeMove(board, currentPlayer, squareChoice);
-            BoardDisplay(board);
-            Console.WriteLine(" "); //Empty Line
             
-            currentPlayer = "O";
-
-            squareChoice = GetUserChoice(currentPlayer);
-            MakeMove(board, currentPlayer, squareChoice);
-            BoardDisplay(board);
-            Console.WriteLine(" "); //Empty Line
-
-            currentPlayer = "X";
-
-            squareChoice = GetUserChoice(currentPlayer);
-            MakeMove(board, currentPlayer, squareChoice);
-            BoardDisplay(board);
-            Console.WriteLine(" "); //Empty Line
             
-            currentPlayer = "O";
 
-            squareChoice = GetUserChoice(currentPlayer);
-            MakeMove(board, currentPlayer, squareChoice);
-            BoardDisplay(board);
-            Console.WriteLine(" "); //Empty Line
+        //     squareChoice = GetUserChoice(currentPlayer);
+        //     MakeMove(board, currentPlayer, squareChoice);
+        //     BoardDisplay(board);
+        //     Console.WriteLine(" "); //Empty Line
 
-            currentPlayer = "X";
+        //     currentPlayer = "X";
 
-            squareChoice = GetUserChoice(currentPlayer);
-            MakeMove(board, currentPlayer, squareChoice);
-            BoardDisplay(board);
-            Console.WriteLine(" "); //Empty Line
+        //     squareChoice = GetUserChoice(currentPlayer);
+        //     MakeMove(board, currentPlayer, squareChoice);
+        //     BoardDisplay(board);
+        //     Console.WriteLine(" "); //Empty Line
             
-            currentPlayer = "O";
+        //     currentPlayer = "O";
 
-            squareChoice = GetUserChoice(currentPlayer);
-            MakeMove(board, currentPlayer, squareChoice);
-            BoardDisplay(board);
-            Console.WriteLine(" "); //Empty Line
+        //     squareChoice = GetUserChoice(currentPlayer);
+        //     MakeMove(board, currentPlayer, squareChoice);
+        //     BoardDisplay(board);
+        //     Console.WriteLine(" "); //Empty Line
 
-           currentPlayer = "X";
+        //     currentPlayer = "X";
 
-            squareChoice = GetUserChoice(currentPlayer);
-            MakeMove(board, currentPlayer, squareChoice);
-            BoardDisplay(board);
-            Console.WriteLine(" "); //Empty Line
+        //     squareChoice = GetUserChoice(currentPlayer);
+        //     MakeMove(board, currentPlayer, squareChoice);
+        //     BoardDisplay(board);
+        //     Console.WriteLine(" "); //Empty Line
+            
+        //     currentPlayer = "O";
+
+        //     squareChoice = GetUserChoice(currentPlayer);
+        //     MakeMove(board, currentPlayer, squareChoice);
+        //     BoardDisplay(board);
+        //     Console.WriteLine(" "); //Empty Line
+
+        //     currentPlayer = "X";
+
+        //     squareChoice = GetUserChoice(currentPlayer);
+        //     MakeMove(board, currentPlayer, squareChoice);
+        //     BoardDisplay(board);
+        //     Console.WriteLine(" "); //Empty Line
+            
+        //     currentPlayer = "O";
+
+        //     squareChoice = GetUserChoice(currentPlayer);
+        //     MakeMove(board, currentPlayer, squareChoice);
+        //     BoardDisplay(board);
+        //     Console.WriteLine(" "); //Empty Line
+
+        //    currentPlayer = "X";
+
+        //     squareChoice = GetUserChoice(currentPlayer);
+        //     MakeMove(board, currentPlayer, squareChoice);
+        //     BoardDisplay(board);
+        //     Console.WriteLine(" "); //Empty Line
 
             Console.WriteLine("Thanks for Playing");
 
         }
+
+        static bool IsWinner(List<string> board)
+        {
+            return false;
+        }
+
 ///////////////////
         static int GetUserChoice(string currentPlayer)
         {
